@@ -21,21 +21,35 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   projectImgAlt,
 }) => {
   return (
-    <div>
-      <div>
-        <Image src={projectImg} alt={projectImgAlt} />
-        <div>
-          <span>
-            <h2>{projectTitle}</h2>
-            <div>
-              <a target="_blank" href={gitHubLink}>
-                <Image src={projectGithubIcon} alt="Github Icon" />
-              </a>
-              <a target="_blank" href={websiteLink}>
-                <Image src={projectLinkIcon} alt="Link Icon" />
-              </a>
-            </div>
-          </span>
+    <div className="w-full p-3 project-item-bg-color border-transparent border-2 border-solid rounded-3xl transition duration-700 opacity-80 hover:opacity-100">
+      <Image
+        className="rounded-t-2xl object-cover w-full"
+        src={projectImg}
+        alt={projectImgAlt}
+      />
+      <div className="flex pt-3 flex-col gap-3">
+        <span className="flex justify-between">
+          <h2 className="font-semibold">{projectTitle}</h2>
+          <div className="flex gap-1">
+            <a target="_blank" href={gitHubLink}>
+              <Image
+                width={17}
+                height={17}
+                src={projectGithubIcon}
+                alt="Github Icon"
+              />
+            </a>
+            <a target="_blank" href={websiteLink}>
+              <Image
+                width={18}
+                height={18}
+                src={projectLinkIcon}
+                alt="Link Icon"
+              />
+            </a>
+          </div>
+        </span>
+        <div className="text-justify font-extralight text-sm tracking-wider">
           {projectDescription}
         </div>
       </div>

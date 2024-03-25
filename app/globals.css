@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  background-color: #222;
+  color: white;
+}
+
+.project-item-bg-color {
+  background-color: rgb(37, 37, 37);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project-item-bg-color:hover {
+  background-color: #2f2f2f;
+  border: 2px solid rgba(255, 255, 255, 0.096);
+  opacity: 1;
+  cursor: default;
+}
