@@ -15,10 +15,10 @@ const AboutMe = () => {
           </h2>
         </div>
         <div className="flex mt-2 gap-1">
-          <a href="https://github.com/Bruce-Webster-21">
+          <a href="https://github.com/Bruce-Webster-21" target="_blank">
             <Image src={githubIcon} width={25} alt="Github Icon" />
           </a>
-          <a href="">
+          <a href="" target="_blank">
             <Image src={resumeIcon} width={17.5} alt="Résumé Icon" />
           </a>
         </div>
