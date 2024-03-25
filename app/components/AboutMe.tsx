@@ -1,7 +1,11 @@
+import Image from "next/image";
+import githubIcon from "@/public/icons/github-icon.svg";
+import resumeIcon from "@/public/icons/resume-icon.svg";
+
 const AboutMe = () => {
   return (
-    <div className="flex flex-col gap-3 gray-bg-color font-extralight p-3 border-transparent border-2 border-solid rounded-3xl transition duration-700 opacity-80 hover:opacity-100">
-      <div className="flex">
+    <div className="flex flex-col gap-3 gray-bg-color font-extralight p-4 border-transparent border-2 border-solid rounded-3xl transition duration-700 opacity-80 hover:opacity-100">
+      <div className="flex justify-between">
         <div className="uppercase">
           <h1 className="text-3xl">
             bruce <span className="font-bold">webster</span>
@@ -10,12 +14,12 @@ const AboutMe = () => {
             front-end <span className="font-bold">developer</span>
           </h2>
         </div>
-        <div>
+        <div className="flex mt-2 gap-1">
           <a href="https://github.com/Bruce-Webster-21">
-            {/*<img class="icon" src="img/icons/github-icon.svg" alt="GitHub icon">*/}
+            <Image src={githubIcon} width={25} alt="Github Icon" />
           </a>
           <a href="">
-            {/*<img class="icon" src="img/icons/resume-icon.svg" alt="Resume icon">*/}
+            <Image src={resumeIcon} width={17.5} alt="Résumé Icon" />
           </a>
         </div>
       </div>

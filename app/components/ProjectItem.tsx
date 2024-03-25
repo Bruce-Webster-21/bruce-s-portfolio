@@ -19,7 +19,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   projectImg,
 }) => {
   return (
-    <div className="w-full p-3 gray-bg-color border-transparent border-2 border-solid rounded-3xl transition duration-700 opacity-80 hover:opacity-100">
+    <div className="w-full p-4 gray-bg-color border-transparent border-2 border-solid rounded-3xl transition duration-700 opacity-80 hover:opacity-100">
       <Image
         className="rounded-t-2xl object-cover w-full"
         src={projectImg}
