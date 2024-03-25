@@ -18,7 +18,12 @@ const AboutMe = () => {
           <a href="https://github.com/Bruce-Webster-21" target="_blank">
             <Image src={githubIcon} width={25} alt="Github Icon" />
           </a>
-          <a href="" target="_blank">
+          <a
+            href="bruce-webster-curriculum-vitae.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+          >
             <Image src={resumeIcon} width={17.5} alt="Résumé Icon" />
           </a>
         </div>
