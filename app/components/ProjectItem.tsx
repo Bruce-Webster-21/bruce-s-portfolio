@@ -47,7 +47,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             </a>
           </div>
         </span>
-        <div className="text-justify font-extralight text-base">
+        <div className="text-justify font-extralight text-base leading-5">
           {projectDescription}
         </div>
       </div>

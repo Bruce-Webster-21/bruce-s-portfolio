@@ -1,5 +1,7 @@
 import AboutMe from "./components/AboutMe";
 import ProjectItem from "./components/ProjectItem";
+import Header from "./components/Header";
+
 import depiladitaCoverImage from "../public/project-images/depiladita-cover.png";
 import drVictorEstrellaCoverImage from "../public/project-images/dr-victor-estrella-cover.png";
 import sapienzaAcademyCoverImage from "../public/project-images/sapienza-academy-cover.png";
@@ -16,6 +18,9 @@ const projectDescriptions = {
 export default function Home() {
   return (
     <div className="mx-auto max-w-3xl p-5 md:px-0">
+      <div className="flex justify-center pb-5">
+        <Header />
+      </div>
       <AboutMe />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5 ">
         <ProjectItem

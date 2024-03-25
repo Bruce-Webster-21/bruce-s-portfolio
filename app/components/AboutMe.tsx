@@ -7,14 +7,14 @@ const AboutMe = () => {
     <div className="flex flex-col gap-3 gray-bg-color font-extralight p-4 border-transparent border-2 border-solid rounded-3xl transition duration-700 opacity-80 hover:opacity-100">
       <div className="flex justify-between">
         <div className="uppercase">
-          <h1 className="text-3xl">
+          <h1 className="text-3xl mt-1 leading-5">
             bruce <span className="font-bold">webster</span>
           </h1>
-          <h2 className="text-xl">
+          <h2 className="text-xl pt-1">
             front-end <span className="font-bold">developer</span>
           </h2>
         </div>
-        <div className="flex mt-2 gap-1">
+        <div className="flex mt-2 gap-2">
           <a href="https://github.com/Bruce-Webster-21" target="_blank">
             <Image src={githubIcon} width={25} alt="Github Icon" />
           </a>
@@ -23,7 +23,7 @@ const AboutMe = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col gap-3 text-base text-justify">
+      <div className="flex flex-col gap-3 text-base text-justify leading-5">
         <p>
           Hello, I'm Bruce Webster, a Teacher and Front-end Developer fluent in
           English, Spanish, and Italian. With a diverse background in education
