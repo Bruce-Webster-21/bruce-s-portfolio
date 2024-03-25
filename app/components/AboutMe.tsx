@@ -1,13 +1,13 @@
 const AboutMe = () => {
   return (
-    <div id="about-me" className="">
+    <div className="flex flex-col gap-3 gray-bg-color font-extralight p-3 border-transparent border-2 border-solid rounded-3xl transition duration-700 opacity-80 hover:opacity-100">
       <div className="flex">
-        <div>
-          <h1>
-            BRUCE <span>WEBSTER</span>
+        <div className="uppercase">
+          <h1 className="text-3xl">
+            bruce <span className="font-bold">webster</span>
           </h1>
-          <h2>
-            FRONT-END <span>DEVELOPER</span>
+          <h2 className="text-xl">
+            front-end <span className="font-bold">developer</span>
           </h2>
         </div>
         <div>
@@ -19,7 +19,7 @@ const AboutMe = () => {
           </a>
         </div>
       </div>
-      <div className="p-container">
+      <div className="flex flex-col gap-3 text-base text-justify">
         <p>
           Hello, I'm Bruce Webster, a Teacher and Front-end Developer fluent in
           English, Spanish, and Italian. With a diverse background in education

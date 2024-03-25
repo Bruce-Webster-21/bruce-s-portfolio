@@ -15,9 +15,9 @@ const projectDescriptions = {
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="mx-auto max-w-3xl p-5 md:px-0">
       <AboutMe />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5 md:mt-5 md:p-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5 ">
         <ProjectItem
           gitHubLink="https://github.com/Bruce-Webster-21/depiladita"
           websiteLink="https://bruce-webster-21.github.io/depiladita"

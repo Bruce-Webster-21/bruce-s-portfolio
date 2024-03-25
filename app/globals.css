@@ -8,14 +8,14 @@ html {
   color: white;
 }
 
-.project-item-bg-color {
+.gray-bg-color {
   background-color: rgb(37, 37, 37);
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.project-item-bg-color:hover {
+.gray-bg-color:hover {
   background-color: #2f2f2f;
   border: 2px solid rgba(255, 255, 255, 0.096);
   opacity: 1;
