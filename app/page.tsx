@@ -9,16 +9,18 @@ const projectDescriptions = {
 
 export default function Home() {
   return (
-    <>
+    <div className="mx-auto max-w-3xl">
       <AboutMe />
-      <ProjectItem
-        gitHubLink="https://github.com/Bruce-Webster-21/depiladita"
-        websiteLink="https://bruce-webster-21.github.io/depiladita"
-        projectTitle="DEPILADITA ESTHETIC"
-        projectDescription={projectDescriptions.depiladitaEsthetic}
-        projectImg={DepiladitaCoverImage}
-        projectImgAlt="Depiladita website cover Image"
-      />
-    </>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5 md:mt-5 md:p-0">
+        <ProjectItem
+          gitHubLink="https://github.com/Bruce-Webster-21/depiladita"
+          websiteLink="https://bruce-webster-21.github.io/depiladita"
+          projectTitle="DEPILADITA ESTHETIC"
+          projectDescription={projectDescriptions.depiladitaEsthetic}
+          projectImg={DepiladitaCoverImage}
+          projectImgAlt="Depiladita website cover Image"
+        />
+      </div>
+    </div>
   );
 }
