@@ -9,7 +9,6 @@ interface ProjectItemProps {
   projectTitle: string;
   projectDescription: string;
   projectImg: StaticImageData;
-  projectImgAlt: string;
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
@@ -18,18 +17,17 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   projectTitle,
   projectDescription,
   projectImg,
-  projectImgAlt,
 }) => {
   return (
     <div className="w-full p-3 project-item-bg-color border-transparent border-2 border-solid rounded-3xl transition duration-700 opacity-80 hover:opacity-100">
       <Image
         className="rounded-t-2xl object-cover w-full"
         src={projectImg}
-        alt={projectImgAlt}
+        alt={projectTitle + " Website Cover Image"}
       />
       <div className="flex pt-3 flex-col gap-3">
         <span className="flex justify-between">
-          <h2 className="font-semibold">{projectTitle}</h2>
+          <h2 className="font-semibold uppercase">{projectTitle}</h2>
           <div className="flex gap-1">
             <a target="_blank" href={gitHubLink}>
               <Image
