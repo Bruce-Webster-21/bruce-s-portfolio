@@ -1,8 +1,15 @@
+import Image from "next/image";
+import { StaticImageData } from "next/image";
+import projectGithubIcon from "@/public/icons/github-icon.svg";
+import projectLinkIcon from "@/public/icons/arrow-up-icon.svg";
+
 interface ProjectItemProps {
   gitHubLink: string;
   websiteLink: string;
   projectTitle: string;
   projectDescription: string;
+  projectImg: StaticImageData;
+  projectImgAlt: string;
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
@@ -10,20 +17,22 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   websiteLink,
   projectTitle,
   projectDescription,
+  projectImg,
+  projectImgAlt,
 }) => {
   return (
     <div>
       <div>
-        {/* <img className="cover-img" src="img/project-img/depiladita-cover.png" alt="Cover image for Depiladita Esthetic website"> */}
+        <Image src={projectImg} alt={projectImgAlt} />
         <div>
           <span>
             <h2>{projectTitle}</h2>
             <div>
               <a target="_blank" href={gitHubLink}>
-                {/*<img class="icon" src="img/icons/github-icon.svg" alt="GitHub icon"> */}
+                <Image src={projectGithubIcon} alt="Github Icon" />
               </a>
               <a target="_blank" href={websiteLink}>
-                {/*<img class="icon" src="img/icons/arrow-up-icon.svg" alt="Arrow up icon">*/}
+                <Image src={projectLinkIcon} alt="Link Icon" />
               </a>
             </div>
           </span>
