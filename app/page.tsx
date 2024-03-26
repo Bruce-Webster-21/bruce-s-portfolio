@@ -16,6 +16,7 @@ export default function Home() {
         {projects.map((project) => {
           return (
             <ProjectItem
+              key={project.id}
               gitHubLink={project.gitHubLink}
               websiteLink={project.websiteLink}
               title={project.title}
@@ -25,14 +26,13 @@ export default function Home() {
           );
         })}
         <div className="w-full min-h-96 p-4 gray-bg-color border-transparent border-2 border-solid rounded-3xl transition duration-700 opacity-80 hover:opacity-100 flex flex-col justify-center items-center text-2xl font-semibold">
-          {/* Add animated timer */}
           <div className="gears">
             <div className="gears-container p-10">
               <div className="gear-rotate"></div>
               <div className="gear-rotate-left"></div>
             </div>
           </div>
-          <div className="">Coming Soon...</div>
+          <div>Coming Soon...</div>
         </div>
       </div>
       <Footer />

@@ -4,6 +4,7 @@ import sapienzaAcademyCoverImage from "../public/project-images/sapienza-academy
 
 const projects = [
   {
+    id: "depiladita-esthetic",
     gitHubLink: "https://github.com/Bruce-Webster-21/depiladita",
     websiteLink: "https://bruce-webster-21.github.io/depiladita",
     title: "Depiladita Esthetic",
@@ -12,6 +13,7 @@ const projects = [
     image: depiladitaCoverImage,
   },
   {
+    id: "dr-victor-estrella",
     gitHubLink: "https://github.com/Bruce-Webster-21/victor-estrella",
     websiteLink: "https://drvictorestrella.com/",
     title: "Dr Victor Estrella",
@@ -20,6 +22,7 @@ const projects = [
     image: drVictorEstrellaCoverImage,
   },
   {
+    id: "sapienza-academy",
     gitHubLink: "https://github.com/Bruce-Webster-21/sapienza-academy",
     websiteLink: "https://sapienzaacademy.com",
     title: "Sapienza Academy",
