@@ -7,7 +7,7 @@ import typescripttIcon from "@/public/icons/typescript.svg";
 const Footer = () => {
   return (
     <div className="flex font-extralight flex-col pt-10 pb-5">
-      <div className="flex justify-center">
+      <div className="flex justify-center text-sm md:text-base">
         Built with React{" "}
         <Image className="ml-1" src={reactIcon} width={22} alt="React Icon" />,
         Typescript{" "}
